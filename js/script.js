@@ -22,7 +22,7 @@ jQuery(document).ready(function($){
 
 	$('.contact-form').submit(function(){
 		$(this).fadeOut();
-		$('#form-header').fadeOut(function(){
+		$('#form-header, .form-detail').fadeOut(function(){
 			setTimeout(function(){
 				$('#form-header').html('Your message has been sent. Thanks <i class="fas fa-hand-peace"></i>');
 				$('#form-header').fadeIn();
